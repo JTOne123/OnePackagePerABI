@@ -1,5 +1,5 @@
 # This is a super easy script for building your android APK files with different versionCode, versionName, packadgeName and separated ABI
-~~[There is no **ROR**, only clear C# code]~~
+~~[There is no **RoR**, only clear C# code]~~
 
 This is a simple C# console app to build one ABI per APK.
 
