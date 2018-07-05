@@ -16,14 +16,14 @@ APKs are fully ready for Google Play.
 3. Run (F5)
 4. Go drink a coffee
 
-[[your.package.name or new one]] - you can easily duplicate your app on Google Play
+*[[your.package.name or new one]]* - you can easily duplicate your app on Google Play
 
-[[Project]] - android project file name (.csproj)
+*[[Project]]* - android project file name (.csproj)
 
-[[Path to project]] - path where the [[Project]] is located
+*[[Path to project]]* - path where the [[Project]] is located
 
-[[KeyStore file name]] - path to your keystore file
+*[[KeyStore file name]]* - path to your keystore file
 
-[[KeyStore password]] - keystore password
+*[[KeyStore password]]* - keystore password
 
-[[KeyStore Key]] - keystore key
+*[[KeyStore Key]]* - keystore key
