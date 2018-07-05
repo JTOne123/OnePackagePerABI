@@ -3,7 +3,7 @@
 
 This is a simple C# console app to build one ABI per APK.
 
-Inspired by an example by this 
+Inspired by this 
 example https://github.com/xamarin/monodroid-samples/tree/master/OneABIPerAPK
 
 Also, you might set up different versionCode, versionName, and packageName.
