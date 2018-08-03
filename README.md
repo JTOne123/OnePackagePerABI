@@ -27,3 +27,6 @@ APKs are fully ready for Google Play.
 *[[KeyStore password]]* - keystore password
 
 *[[KeyStore Key]]* - keystore key
+
+
+<a href="https://www.buymeacoffee.com/pauldatsiuk" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
