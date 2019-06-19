@@ -15,7 +15,8 @@ namespace APKBuilder
             int versionCode = 10;
             var versionName = "1.2.3";
 
-            var msbuild = @"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe";
+            var msbuild = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\msbuild.exe";
+            //var msbuild = @"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe";
             var zipalign = @"C:\Android\sdk\build-tools\27.0.3\zipalign.exe";
             var jarsigner = @"C:\Program Files\Java\jdk1.8.0_161\bin\jarsigner.exe";
 
