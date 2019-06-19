@@ -56,7 +56,7 @@ namespace APKBuilder
                 var signedApkPath = $"\"{binPath}/{packageName}_signed.apk\"";
                 var alignedApkPath = $"{binPath}/{packageName}_signed_aligned.{abi}.apk";
 
-                var mbuildArgs = $"{androidProject} /t:PackageForAndroid /p:AndroidSupportedAbis={abi} /p:AndroidManifest={specificManifest} /p:Configuration=Release /p:IntermediateOutputPath={objPath}/ /p:OutputPath={binPath}";
+                var mbuildArgs = $"{androidProject} /t:PackageForAndroid /t:restore /p:AndroidSupportedAbis={abi} /p:Configuration=Release /p:IntermediateOutputPath={objPath}/ /p:OutputPath={binPath}";
                 var jarsignerArgs = $"-verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore {keystorePath} -storepass {keystorePassword} -signedjar \"{signedApkPath}\" {unsignedApkPath} {keystoreKey}";
                 var zipalignArgs = $"-f -v 4 {signedApkPath} {alignedApkPath}";
 
