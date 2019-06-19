@@ -42,15 +42,13 @@ namespace APKBuilder
                 var keystorePassword = "[[KeyStore password]]";
                 var keystoreKey = "[[KeyStore Key]]";
 
-                File.Copy($"{androidProjectFolder}/{buildManifest}", $"{androidProjectFolder}/{specificManifest}", true);
-
-                var xmlFile = XDocument.Load($"{androidProjectFolder}/{specificManifest}");
+                var xmlFile = XDocument.Load($"{androidProjectFolder}/{buildManifest}");
                 var mnfst = xmlFile.Elements("manifest").First();
                 var androidNamespace = mnfst.GetNamespaceOfPrefix("android");
                 mnfst.Attribute("package").Value = packageName;
                 mnfst.Attribute(androidNamespace + "versionName").Value = versionName;
                 mnfst.Attribute(androidNamespace + "versionCode").Value = ((i + 1) * 100000 + versionCode).ToString();
-                xmlFile.Save($"{androidProjectFolder}/{specificManifest}");
+                xmlFile.Save($"{androidProjectFolder}/{buildManifest}");
 
                 var unsignedApkPath = $"\"{binPath}/{packageName}.apk\"";
                 var signedApkPath = $"\"{binPath}/{packageName}_signed.apk\"";
